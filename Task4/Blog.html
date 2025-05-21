@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Blog App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>My Blog</h1>
+      <p>Write something amazing</p>
+    </header>
+
+    <div class="main-content">
+      <section class="blog-form-section card">
+        <h2>Create Blog</h2>
+        <form id="blog-form">
+          <input type="text" id="title" placeholder="Blog Title" required />
+          <textarea id="content" placeholder="Your thoughts..." required></textarea>
+          <button type="submit">Publish</button>
+        </form>
+      </section>
+
+      <section class="blog-list-section card">
+        <h2>Recent Posts</h2>
+        <div id="blogs">
+
+          
+          <div id="blog-template" class="blog" style="display: none;">
+            <h3 class="blog-title"></h3>
+            <p class="blog-content"></p>
+            <span class="read-more" style="display:none; cursor:pointer; color:#2563eb; font-weight:600;"></span>
+            <div class="actions">
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
