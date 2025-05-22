@@ -70,23 +70,50 @@ You don’t manually free memory, the JS engine handles that behind the scenes.
 
 ---
 
-### 6. Explain Shallow copy vs Deep copy in Javascript?
+### 6. Explain Shallow copy vs Deep copy in JavaScript?
 
-* **Shallow copy** copies only the top-level. Nested objects still refer to the same memory.
+---
+
+
+#### Shallow Copy (Surface-level copy)
+A shallow copy means: we copy only the outer shell of an object.  
+But if that object contains another object inside it (nested object), the reference (pointer) is shared, not duplicated.
+
+Think of it like making a photocopy of a folder — the outer file is copied, but the paper inside is the same original one.
+
+####  Deep Copy 
+A deep copy means: we copy the object completely, including everything inside — even the nested objects are brand new and separate.
+
+It’s like creating a new folder and manually rewriting everything inside — so changes to one do not affect the other.
+
+---
+
+### example
 
 ```javascript
-let original = { a: 1, b: { c: 2 } };
+let original = {
+  name: "Amit",
+  contact: {
+    email: "amit@m.com",
+    phone: "1234567890"
+  }
+};
+
 let shallow = { ...original };
-shallow.b.c = 10; 
-```
 
-* **Deep copy** duplicates everything.
+shallow.contact.email = "shallow@m.com";
 
-```javascript
+console.log("Shallow Copy:");
+console.log("Original Email:", original.contact.email);  
+console.log("Shallow Email:", shallow.contact.email);    
+
 let deep = JSON.parse(JSON.stringify(original));
-```
 
-Now `deep.b.c` won't affect `original`.
+deep.contact.email = "deep@m.com";
+
+console.log("\nDeep Copy:");
+console.log("Original Email:", original.contact.email);  
+console.log("Deep Email:", deep.contact.email);          
 
 ---
 

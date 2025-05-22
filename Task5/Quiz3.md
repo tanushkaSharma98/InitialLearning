@@ -125,6 +125,6 @@ Yes, I honestly think JavaScript is here to stay and probably will dominate even
 
 The ecosystem is huge: React, Angular, Vue on frontend; Node.js, Express on backend; tons of NPM packages; and it’s supported by every browser out there. Even newer tech like Deno and Bun is still JS/TS-based.
 
-Also, it keeps evolving — with ES6, ES2020+, async/await, modules, etc., it's way more powerful than it used to be.
+Also, it keeps evolving — with ES6 async/await, modules, etc., it's way more powerful than it used to be.
 
 And not just websites — now you can build mobile apps (React Native), desktop apps (Electron), even games and AI apps using JS. So yeah, it’s not perfect, but it's flexible, fast-evolving, and everywhere. Definitely the language of the future (at least near future).
