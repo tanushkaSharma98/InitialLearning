@@ -1,4 +1,3 @@
-# JavaScript Basics – Notes
 
 ---
 
@@ -42,7 +41,7 @@ So yeah, `let` is safer and more predictable than `var`.
 - It's block-scoped (like `let`)
 - It avoids weird issues that come with `var` hoisting
 
-If a value doesn’t need to change, just use `const`. It makes the code cleaner, more readable, and helps avoid bugs. `let` is for variables you know will change. `var` is... kinda outdated now.
+If a value doesn’t need to change, just use `const`. It makes the code cleaner, more readable, and helps avoid bugs. `let` is for variables you know will change. `var` is now outdated now.
 
 ---
 
@@ -77,7 +76,7 @@ const user = {
 ```
 
 You can access values using dot notation (`user.name`) or bracket notation (`user["age"]`).  
-Objects are super useful — almost everything in JavaScript is either an object or can be treated like one.
+
 
 ---
 
@@ -160,7 +159,7 @@ There are 7 primitive types:
 4. **Undefined** – when a variable is declared but not assigned
 5. **Null** – intentional absence of a value
 6. **Symbol** – unique and immutable value (used for object keys)
-7. **BigInt** – used for really large integers
+7. **BigInt** 
 
 Primitive types are immutable and stored by value — not by reference.
 
@@ -176,10 +175,10 @@ With JavaScript, you can access and manipulate this tree — meaning you can cha
 
 ### Example:
 ```js
-document.getElementById("title").innerText = "Hello JS!";
+document.getElementById("title").innerText = "Hello";
 ```
 
-That line grabs an HTML element and changes its text using JS.
+That line takes a HTML element and changes its text using JS.
 
 ---
 
@@ -188,10 +187,8 @@ That line grabs an HTML element and changes its text using JS.
 Because JavaScript needs a way to "see" and "change" the webpage.
 
 DOM acts like a bridge between your HTML and your JS. Without DOM, JavaScript would have no way to access or modify what's on the screen.
-
-Thanks to DOM:
+We can -
 - You can react to user actions
 - You can add/remove elements dynamically
 - You can update styles or content live
 
-In short: **DOM is how JavaScript communicates with your webpage**.
